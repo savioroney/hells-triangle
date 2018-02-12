@@ -1,4 +1,3 @@
-require 'test/unit/autorunner'
 require 'test/unit'
 require File.dirname(__FILE__) +  '/../../../../src/main/models/triangle.rb'
 
@@ -15,19 +14,19 @@ class TriangleTest < Test::Unit::TestCase
     assert_equal(expect_max, max, "Max value wrong!")
   end
 
-  def test_get_next_max_two_itens
+  def test_get_next_max_to_two_itens
     expect_max = 5
     max = @triangle.get_next_max(1, 0)
     assert_equal(expect_max, max, "Max value wrong!")
   end
 
-  def test_get_next_max_three_itens
+  def test_get_next_max_to_three_itens
     expect_max = 7
     max = @triangle.get_next_max(2, 1)
     assert_equal(expect_max, max, "Max value wrong!")
   end
 
-  def test_get_next_max_four_itens
+  def test_get_next_max_to_four_itens
     expect_max = 8
     max = @triangle.get_next_max(3, 1)
     assert_equal(expect_max, max, "Max value wrong!")
@@ -37,6 +36,12 @@ class TriangleTest < Test::Unit::TestCase
     expect_index = 2
     index = @triangle.get_index(2, 1)
     assert_equal(expect_index, index, "Index wrong!")
+  end
+
+  def test_get_maximum_total
+    expect_max = 26
+    max = @triangle.get_maximum_total
+    assert_equal(expect_max, max, "Max value wrong!")
   end
 
 
