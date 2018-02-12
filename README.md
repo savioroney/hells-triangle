@@ -34,7 +34,23 @@ For installation of the dependencies it will be necessary to install the [Bundle
 
 ### Cucumber
 
-To create the BDD feature was used [Cucumber](https://cucumber.io/). Run in the features directory:
+To create the BDD feature was used [Cucumber](https://cucumber.io/). 
+
+Feature for solution [get_maximum_total_triangle.feature](https://github.com/savioroney/hells-triangle/blob/master/src/test/features/get_maximum_total_triangle/get_maximum_total_triangle.feature):
+
+    Feature: Get maximum total to triangle
+    
+      Scenario: To get value Maximum Total
+        Given a triangle with values:
+          | 6       |
+          | 3,5     |
+          | 9,7,1   |
+          | 4,6,8,4 |
+        When to obtain total maximum value
+        Then should return the value: 26
+
+
+Run in the features directory:
 
     cucumber
 
