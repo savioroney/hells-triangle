@@ -21,6 +21,16 @@ Your code will receive an (multidimensional) array as input.
 The triangle from above would be:
 
     example = [[6],[3,5],[9,7,1],[4,6,8,4]]
+    
+## Programming language
+
+To implement the solution of the problem was used the language [Ruby](https://www.ruby-lang.org). 
+
+Ruby was chosen for meeting the solution assessment requirements for the challenge:
+
+    1- Focus on simplicity and productivity
+    2- It has elegant syntax of natural reading and easy writing
+    3- It offers resources for implementation of automated tests
 
 ## Building and Running
 
