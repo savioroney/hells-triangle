@@ -15,8 +15,8 @@ class Triangle
     sum
   end
 
-  def get_next_max(t_index, index_current)
-    @values[t_index].slice(index_current, 2).max
+  def get_next_max(t_index, index_current_max)
+    @values[t_index].slice(index_current_max, 2).max
   end
 
   def get_index(t_index, value)

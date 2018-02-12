@@ -11,6 +11,6 @@ end
 
 Then(/^should return the value: (\d+)$/) do |expect_value|
   if expect_value != @value
-    fail("Erro! Valor esperado: "+ expect_value.to_s + ", Valor retornado: " + @value.to_s)
+    fail("Error! Expected value: "+ expect_value.to_s + ", Return value: " + @value.to_s)
   end
 end
