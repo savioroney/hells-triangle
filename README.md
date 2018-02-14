@@ -24,9 +24,7 @@ The triangle from above would be:
     
 ## Programming language
 
-To implement the solution of the problem was used the language [Ruby](https://www.ruby-lang.org). 
-
-Ruby was chosen for meeting the solution assessment requirements for the challenge:
+The solution was implemented using [Ruby](https://www.ruby-lang.org), based on the following criterias:
 
     1- Focus on simplicity and productivity
     2- It has elegant syntax of natural reading and easy writing
@@ -34,7 +32,7 @@ Ruby was chosen for meeting the solution assessment requirements for the challen
 
 ## Building and Running
 
-To build and run the solution, follow the steps below.
+Follow the steps below to build and run the solution. 
 
 ### Bundle
 
@@ -44,7 +42,7 @@ For installation of the dependencies it will be necessary to install the [Bundle
 
 ### Cucumber
 
-To create the BDD feature was used [Cucumber](https://cucumber.io/). 
+BDD feature was created using [Cucumber](https://cucumber.io/). 
 
 Feature for solution [get_maximum_total_triangle.feature](https://github.com/savioroney/hells-triangle/blob/master/src/test/features/get_maximum_total_triangle/get_maximum_total_triangle.feature):
 
@@ -60,12 +58,12 @@ Feature for solution [get_maximum_total_triangle.feature](https://github.com/sav
         Then should return the value: 26
 
 
-Run in the features directory:
+Run the command in the features directory:
 
     cucumber
 
 ### Unit Test
 
-To run the unit test of the solution, run:
+Run the command to execute the unit test:
 
     ruby -I test src/test/models/triangle_test.rb
